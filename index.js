@@ -2,17 +2,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client"
 
-const parent=React.createElement(
-  "div",
-    {id:"parent"},
-    React.createElement(
-      "div",
-      {id:"child"},
-      [
-      React.createElement("h1",{},"i am h1 tag"),
-      React.createElement("h1",{},"this is my h2 tag")
-      ]
-    )
-);
-const root=ReactDOM.createRoot(document.getElementById("root"));
-root.render(parent)
+
+const Title=()=><h1 className="head">hellloo</h1>
+
+const HeadComponent=()=>(
+  <div id="container">
+    <Title/>
+    <h1 className="heading">
+      namsthe react functiona component
+    </h1>
+  </div>
+)
+const root= ReactDOM.createRoot(document.getElementById("root"));
+root.render(<HeadComponent/>);
