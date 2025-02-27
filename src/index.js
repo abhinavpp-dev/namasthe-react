@@ -5,6 +5,7 @@
 import ReactDOM from "react-dom/client" 
 import Header from "./components/Header"
 import Body from "./components/Body"
+import Counter from "./components/count"
 
 
 
@@ -13,6 +14,7 @@ const AppLayout=()=>{
    < div className="app">
     <Header/>
     <Body/>
+    <Counter/>
    </div>
   )
 
